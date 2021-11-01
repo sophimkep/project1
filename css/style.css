@@ -1,0 +1,440 @@
+body{
+   padding: 0;
+   margin: 0;
+   font-family: sans-serif;
+}
+nav{
+   padding: 0.5rem 9%;
+   display: flex;
+   justify-content: space-between;
+   background: #eee;
+   box-shadow: 2px 2px 12px rgba(0, 0, 0, 1);
+   align-items: center;
+   z-index: 50;
+   position: relative;
+}
+nav .logo img{
+   width: 70px;
+}
+nav ul{
+   display: flex;
+   list-style: none;
+}
+nav ul li{
+   margin-right: 25px;
+}
+nav ul li a{
+   text-decoration: none;
+   font-size: 20px;
+   color: #000;
+   font-weight: bold;
+}
+nav ul li a:hover{
+   color: orange;
+}
+.active{
+   border-bottom: 2px solid orange;
+}
+.search .search-box{
+   width: 300px;
+   outline: none;
+   padding: 5.5px;
+}
+.search button{
+   font-size: 17px;
+   padding: 5px 20px;
+   text-align: center;
+   background: orange;
+   border: none;
+   border-radius: 5px;
+}
+.search button:hover{
+   cursor: pointer;
+}
+.banner{
+   width: 100%;
+   background: #81d4fa ;
+   text-align: center;
+   z-index: 5;
+}
+.sub-container{
+   display: flex;
+   justify-content: space-between;
+   height: 85vh;
+   width: 80%;margin: auto;
+   align-items: center;
+}
+.banner .sub-container .banner-left span{
+   color: white;
+}
+.banner .sub-container .banner-left button{
+   padding: 10px 20px;
+   background: orange;
+   border: none;
+   border-radius: 7px;
+   color: white;
+   font-size: 20px;
+   margin-top: 2rem;
+}
+.banner .sub-container .banner-left button:hover{
+   background: #03a9f4;
+   transition: 0.5s ease-in;
+   transform: scale(1.04);
+   cursor: pointer;
+}
+.banner .sub-container .banner-right{
+   width: 45%;
+   padding: 10px;
+}
+
+.popular-product{
+   width: 80%;
+   margin: auto;
+}
+.popular-product h3{
+   clip-path: polygon(100% 0, 91% 51%, 100% 100%, 0% 100%, 11% 50%, 0% 0%);
+   background: orange;
+   width: 200px;
+   padding: 15px 30px;
+   font-size: 1.5rem;
+}
+.title{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+.popular-product .popular .pop img{
+   width: 200px;
+   height: 200px;
+}
+
+.popular{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 2rem;
+}
+.popular-product .popular .pop{
+   background: #fff;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   border-radius: 7px;
+   text-align: center;
+   padding: 15px;
+}
+.popular-product .popular .pop:hover{
+   transform: scale(1.04);
+}
+.rate{
+   color: orange;
+}
+.popular-product .popular .pop p{
+   color: red;
+   font-size: 1.3rem;
+}
+.popular-product .popular .pop button{
+   padding: 7px 20px;
+   background: green;
+   border: none;
+   border-radius: 7px;
+   font-size: 1.3rem;
+   color: white;
+}
+.popular-product .popular .pop button:hover{
+   background: #00e676;
+   cursor: pointer;
+   transition: 0.2s all;
+   transform: scale(1.04);
+}
+.reviews{
+   width: 80%;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+}
+.reviews .review img{
+   width: 75%;
+   padding: 10px;
+}
+.reviews .review{
+   background: #fff;
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   text-align: center;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.reviews .review:hover{
+   transition: 0.2s all;
+   transform: scale(1.04);
+}
+.reviews .review p{
+   margin-top: 3rem;
+   font-weight: bold;
+}
+.review-content h3{
+   clip-path: polygon(100% 0, 91% 51%, 100% 100%, 0% 100%, 11% 50%, 0% 0%);
+   background: orange;
+   width: 200px;
+   padding: 15px 30px;
+   font-size: 1.5rem;
+}
+.mgt{
+   margin-top: 2rem;
+}
+
+.footer{
+   margin-top: 5rem;
+   background: black;
+   color: white;
+   height: 40vh;
+   padding: 1rem;
+}
+.footer .foot-contain{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   width: 80%;
+   margin: auto;
+   justify-content: center;
+   align-items: center;
+}
+.foot-contain .copy{
+   font-size: 1rem;
+   width: 100%;
+}
+.contact{
+   width: 70%;
+   margin-left: 70px;
+   padding: 5px;
+}
+.contact .way{
+   display: grid;
+   grid-template-columns: repeat(2,1fr );
+   flex-wrap: wrap;
+}
+.contact .way a{
+   text-decoration: none;
+   color: #0288d1;
+}
+.contact h3{
+   font-size: 1.5rem;
+   color: #03a9f4;
+}
+.contact .l {
+   width: 40px;
+   height: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   background: white;
+   color: #03a9f4;
+   margin-left: 17px;
+   margin-top: 7px;
+}
+.contact .way p{
+   margin-left: -50px;
+}
+.foot-contain .login a{
+   margin-left: 50px;
+   color: #0288d1;
+}
+.foot-contain .login span{
+   text-decoration: none;
+   color: orange;
+}
+
+/* product page */
+
+.p-container{
+   width: 90%;
+   margin: auto;
+}
+.p-container h2{
+   width: 200px;
+   background: orange;
+   padding: 15px;
+   text-align: center;
+   border-radius: 0px 90px;
+}
+.p-container .brands{
+   display: grid;
+   grid-template-columns: repeat(3,1fr );
+   gap: 1rem;
+}
+.p-container .brands img{
+   width: 300px;
+}
+.col3{
+   background: #eee;
+   text-align: center;
+   border-radius: 7px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+.products{
+   width: 90%;
+   margin: auto;
+}
+.products .product-contain{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap: 1rem;
+}
+.products h3{
+   width: 200px;
+   background: orange;
+   padding: 15px;
+   text-align: center;
+   border-radius: 50px 10px;
+}
+.products .product-contain .col-4{
+   text-align: center;
+   padding: 1.5rem;
+   border-radius: 5px;
+   background: #b3e5fc;
+   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.products .product-contain img{
+   width: 150px;
+   height: 25vh;
+}
+.products .product-contain .col-4:hover{
+   transition: 0.5s all;
+   transform: scale(1.04);
+}
+.products .product-contain .col-4 p{
+   color: red;
+   font-size: 1.4rem;
+}
+.products .product-contain .col-4 button{
+   padding: 7px 20px;
+   background: green;
+   font-size: 1.3rem;
+   border: none;
+   border-radius: 7px;
+   color: white;
+}
+.products .product-contain .col-4 button:hover{
+   background: #03a9f4;
+   transition: 0.4s all;
+   transform: scale(1.05);
+   cursor: pointer;
+}
+
+/* service page */
+
+.service-con {
+   display: grid;
+   grid-template-columns: repeat(3,1fr );
+   width: 90%;
+   margin: auto;
+   gap: 2rem;
+
+}
+.service-con .col-3 img{
+   width: 200px;
+   height: 200px;
+
+}
+.service-con .col-3{
+   width: 350px;
+   background: #fff;
+   text-align: center;
+   padding: 10px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.service .title h3{
+   width: 200px;
+   background: orange;
+   padding: 15px;
+   text-align: center;
+   border-radius: 50px 10px;
+}
+
+/* account page */
+.main-form{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.form {
+   width: 600px;
+   margin-top: 5rem;
+   max-width: 390px;
+   background: #fff;
+   box-shadow: 0px 15px 20px rgba(0, 0, 0, 1);
+   padding: 30px;
+   border-radius: 5px;
+}
+.form .title-form{
+   display: flex;
+   width: 200%;
+}
+.form .title-form .title {
+   width: 50%;
+   font-size: 35px;
+   font-weight: 600;
+   text-align: center;
+}
+.form .form-container{
+   width: 100%;
+}
+.form-inner form .field{
+   height: 50px;
+   width: 100%;
+   margin-top: 30px;
+}
+.form-inner form .field input{
+   height: 100%;
+   width: 95%;
+   outline: none;
+   padding-left: 15px;
+   font-size: 17px;
+   border-radius: 5px;
+   border: 1px solid lightgray;
+   border-bottom: 2px solid lightgray;
+}
+.form-inner form .field input:focus{
+   border-color: #1e88e5;
+}
+.form-inner form .fields input{
+   height: 100%;
+   width: 100%;
+   outline: none;
+   padding-left: 15px;
+   border-radius: 5px;
+   border: 1px solid lightgray;
+}
+.form-inner form .fields{
+   height: 50px;
+   width: 100%;
+   margin-top: 30px;
+}
+.form-inner form .pass-link, .form-inner form .signup-link{
+   margin-top: 15px;
+}
+.form-inner form .pass-link a {
+   color: #1e88e5;
+   text-decoration: none;
+}
+.form-inner form .signup-link a{
+   color: #1e88e5;
+   text-decoration: none;
+}
+.form-inner form .pass-link a:hover{
+   text-decoration: underline;
+}
+.form-inner form .signup-link a:hover{
+   text-decoration: underline;
+}
+form .fields input[type="submit"]{
+   background: -webkit-linear-gradient(left,#42a5f5, #fa4299);
+   font-size: 20px;
+   font-weight: 500;
+   padding-left: 0px;
+   border: none;
+   color: white;
+   cursor: pointer;
+}
+
+
