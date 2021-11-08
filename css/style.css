@@ -436,3 +436,181 @@ form .fields input[type="submit"]{
    color: white;
    cursor: pointer;
 }
+
+@media (max-width: 560px){
+   body{
+      padding: 0;
+      margin: 0;
+      font-family: sans-serif;
+   }
+   nav{
+      background: #fff;
+      display: block;
+      justify-content: space-between;
+      box-shadow: 2px 2px 12px rgba(0, 0, 0, 1);
+      align-items: center;
+      z-index: 50;
+      position: relative;
+   }
+   nav .logo img{
+      width: 40px;
+   }
+   nav ul{
+      display: block;
+      list-style: none;
+   }
+   nav ul li{
+      margin-top: 25px;
+   }
+   nav ul li a{
+      text-decoration: none;
+      font-size: 15px;
+      color: #000;
+      font-weight: bold;
+   }
+   nav ul li a:hover{
+      color: orange;
+   }
+   .active {
+      background: orange;
+      width: 15%;
+      border: none;
+      text-align: center;
+   }
+   .search .search-box{
+      width: 250px;
+      outline: none;
+      padding: 5px;
+      margin-left: 100px;
+      margin-top: 50px;
+   }
+   .search button{
+      font-size: 15px;
+      padding: 5px 20px;
+      text-align: center;
+      background: orange;
+      border: none;
+      border-radius: 5px;
+   }
+   .search button:hover{
+      cursor: pointer;
+   }
+   .banner{
+      width: 100%;
+      background: #81d4fa ;
+      text-align: center;
+      z-index: 5;
+   }
+   .sub-container{
+      display: block;
+      justify-content: space-between;
+      align-items: center;
+   }
+   .banner .sub-container .banner-left span{
+      color: white;
+   }
+   .banner .sub-container .banner-left button{
+      padding: 10px 20px;
+      background: orange;
+      border: none;
+      border-radius: 7px;
+      color: white;
+      font-size: 20px;
+      margin-top: 2rem;
+   }
+   .banner .sub-container .banner-left button:hover{
+      background: #03a9f4;
+      transition: 0.5s ease-in;
+      transform: scale(1.04);
+      cursor: pointer;
+   }
+   .banner .sub-container .banner-right{
+      width: 30%;
+      padding: 10px;
+      margin-top: 1rem;
+   }
+   .banner-right img{
+      width: 450px;
+   }
+   .banner-left h1{
+      margin-top: 0;
+      font-size: 28px;
+   }
+   .sub-container {
+      padding: 1rem;
+   }
+   .popular{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      gap: 2rem;
+   }
+   .footer{
+      margin-top: 5rem;
+      background: black;
+      color: white;
+      height: 20vh;
+      padding: 1rem;
+   }
+   .footer .foot-contain{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      width: 98%;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+   }
+   .foot-contain .copy{
+      font-size: 10px;
+   }
+   .contact{
+      width: 100%;
+      margin-left: 30px;
+      padding: 5px;
+   }
+   .contact .way{
+      display: grid;
+      grid-template-columns: repeat(2,1fr );
+      flex-wrap: wrap;
+   }
+   .contact .way a{
+      text-decoration: none;
+      color: #0288d1;
+      font-size: 12px;
+   }
+   .contact h3{
+      font-size: 0.7rem;
+      color: #03a9f4;
+      margin-top: 0;
+   }
+   .contact .l {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background: white;
+      color: #03a9f4;
+      margin-left: 17px;
+      margin-top: 7px;
+   }
+   .contact img{
+      width: 50px;
+      margin-left: 7px;
+   }
+   .contact .way p{
+      margin-left: -10px;
+      font-size: 10px;
+   }
+   .foot-contain .login a{
+      margin-left: 50px;
+      color: #0288d1;
+   }
+   .foot-contain .login span{
+      text-decoration: none;
+      color: orange;
+   }
+   .login {
+      font-size: 12px;
+   }
+}
